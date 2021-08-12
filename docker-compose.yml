@@ -1,0 +1,13 @@
+---
+    version: '3'
+    
+    services:
+      swift:
+        image: swift:5.4
+        working_dir: /swift
+        volumes:
+          - ./swift:/swift
+        entrypoint: ["./run.sh"]
+
+
+    
