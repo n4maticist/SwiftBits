@@ -4,9 +4,9 @@
     services:
       swift:
         image: swift:5.4
-        working_dir: /swift
+        working_dir: /code
         volumes:
-          - ./swift:/swift
+          - ./code:/code
         entrypoint: ["./run.sh"]
 
 
